@@ -16,7 +16,9 @@ npm install --save react react-dom
 ## BABEL
 
 ```sh
-npm install --save-dev babel-cli babel-preset-react
-echo '{ "presets": ["react"] }' > .babelrc
+npm install --save-dev babel-cli babel-preset-react babel-preset-es2015
 echo '<h1>Hello, world!</h1>' > index.js
 ```
+
+.babelrcを作成する。  
+
