@@ -13,4 +13,10 @@ npm init
 npm install --save react react-dom
 ```
 
+## BABEL
 
+```sh
+npm install --save-dev babel-cli babel-preset-react
+echo '{ "presets": ["react"] }' > .babelrc
+echo '<h1>Hello, world!</h1>' > index.js
+```
