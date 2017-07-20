@@ -9,16 +9,21 @@ https://facebook.github.io/react/
 ## Reactのインストール
 
 ```sh
-npm init
-npm install --save react react-dom
+$ npm init
+$ npm install --save react react-dom
 ```
 
 ## BABEL
 
 ```sh
-npm install --save-dev babel-cli babel-preset-react babel-preset-es2015
-echo '<h1>Hello, world!</h1>' > index.js
+$ npm install --save-dev babel-cli babel-preset-react babel-preset-es2015
 ```
 
 .babelrcを作成する。  
 
+## Browserify
+
+```sh
+$ npm install --save-dev browserify babelify
+$ ./node_modules/.bin/browserify -t babelify index.js -o compiled_index.js
+```
