@@ -12,10 +12,27 @@ var _reactDom2 = _interopRequireDefault(_reactDom);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 _reactDom2.default.render(_react2.default.createElement(
-  'h1',
-  null,
-  'Hello, world!'
+    'h1',
+    null,
+    'Hello, world!'
 ), document.getElementById('root'));
+
+function Button(props) {
+    return _react2.default.createElement(
+        'button',
+        { onClick: props.onClick },
+        'Say Hello'
+    );
+}
+
+function HelloButton() {
+    function handleClick() {
+        alert('Hello!');
+    }
+    return _react2.default.createElement(Button, { onClick: handleClick });
+}
+
+_reactDom2.default.render(_react2.default.createElement(HelloButton, null), document.getElementById('container'));
 
 },{"react":184,"react-dom":32}],2:[function(require,module,exports){
 (function (process){
