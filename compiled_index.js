@@ -53,6 +53,23 @@ var element = _react2.default.createElement(
 
 _reactDom2.default.render(element, document.getElementById('user'));
 
+function tick() {
+    var element = _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(
+            'h2',
+            null,
+            'It is ',
+            new Date().toLocaleTimeString(),
+            '.'
+        )
+    );
+    _reactDom2.default.render(element, document.getElementById('tick'));
+}
+
+setInterval(tick, 1000);
+
 },{"react":184,"react-dom":32}],2:[function(require,module,exports){
 (function (process){
 /**
