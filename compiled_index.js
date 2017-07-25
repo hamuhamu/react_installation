@@ -34,6 +34,25 @@ function HelloButton() {
 
 _reactDom2.default.render(_react2.default.createElement(HelloButton, null), document.getElementById('container'));
 
+function formatName(user) {
+    return user.firstName + ' ' + user.lastName;
+}
+
+var user = {
+    firstName: 'Harper',
+    lastName: 'Perez'
+};
+
+var element = _react2.default.createElement(
+    'h1',
+    null,
+    'Hello, ',
+    formatName(user),
+    '!'
+);
+
+_reactDom2.default.render(element, document.getElementById('user'));
+
 },{"react":184,"react-dom":32}],2:[function(require,module,exports){
 (function (process){
 /**
